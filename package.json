@@ -2,7 +2,7 @@
   "name": "food-maps",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://alishelton.github.io/berkely-income-and-food-map",
+  "homepage": "http://alishelton.github.io/berkeley-income-and-food-map",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "d3": "^5.7.0",
