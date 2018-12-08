@@ -1,16 +1,16 @@
 {
   "main.css": "/berkeley-income-and-food-map/static/css/main.c82daa51.chunk.css",
-  "main.js": "/berkeley-income-and-food-map/static/js/main.737c03c5.chunk.js",
-  "main.js.map": "/berkeley-income-and-food-map/static/js/main.737c03c5.chunk.js.map",
+  "main.js": "/berkeley-income-and-food-map/static/js/main.162acbb9.chunk.js",
+  "main.js.map": "/berkeley-income-and-food-map/static/js/main.162acbb9.chunk.js.map",
   "static/css/1.d35d10fc.chunk.css": "/berkeley-income-and-food-map/static/css/1.d35d10fc.chunk.css",
   "static/js/1.44e0497d.chunk.js": "/berkeley-income-and-food-map/static/js/1.44e0497d.chunk.js",
   "static/js/1.44e0497d.chunk.js.map": "/berkeley-income-and-food-map/static/js/1.44e0497d.chunk.js.map",
   "runtime~main.js": "/berkeley-income-and-food-map/static/js/runtime~main.6d2ba383.js",
   "runtime~main.js.map": "/berkeley-income-and-food-map/static/js/runtime~main.6d2ba383.js.map",
-  "static/media/bootstrap.css": "/berkeley-income-and-food-map/static/media/glyphicons-halflings-regular.fa277232.woff",
+  "static/media/bootstrap.css": "/berkeley-income-and-food-map/static/media/glyphicons-halflings-regular.448c34a5.woff2",
   "static/css/main.c82daa51.chunk.css.map": "/berkeley-income-and-food-map/static/css/main.c82daa51.chunk.css.map",
   "static/css/1.d35d10fc.chunk.css.map": "/berkeley-income-and-food-map/static/css/1.d35d10fc.chunk.css.map",
   "index.html": "/berkeley-income-and-food-map/index.html",
-  "precache-manifest.7ac8c92cd276597d6e894fd1fb755838.js": "/berkeley-income-and-food-map/precache-manifest.7ac8c92cd276597d6e894fd1fb755838.js",
+  "precache-manifest.1a8fb0d1d61bf4b53607c1acd7d2747b.js": "/berkeley-income-and-food-map/precache-manifest.1a8fb0d1d61bf4b53607c1acd7d2747b.js",
   "service-worker.js": "/berkeley-income-and-food-map/service-worker.js"
 }
