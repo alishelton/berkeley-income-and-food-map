@@ -95,7 +95,6 @@ class ColorMap extends Component {
   }
 
   createMap() {
-
     const legendNode = d3.select(this.lNode);
     const svgNode = d3.select(this.node);
     const component = this;
@@ -139,13 +138,13 @@ class ColorMap extends Component {
       .append("g")
       .attr("class","legendGroup");
     enterGroups.append("rect")
-      .attr("y", d => x(d[0]) - 100)
+      .attr("y", d => x(d[0]) - 120)
       .attr("height", d => x(d[0]) - x(d[1]) + 10)
       .attr("width", 20)
       .attr("fill", d => color(d[0]));
     enterGroups.append("text")
       .attr("x", 30)
-      .attr("y", d => (x(d[0]) - 85))
+      .attr("y", d => (x(d[0]) - 105))
       .attr("fill", "white")
       .text(d => format(d[1]));
 
@@ -220,21 +219,26 @@ class ColorMap extends Component {
 
     //update legend
     var legendGroups = legendNode
-      .selectAll(".legendGroup")
-      .data(color.range().map(d => color.invertExtent(d)));
+      .selectAll("g")
+      .data(color.range().map(d => color.invertExtent(d)), d => d);
+    legendGroups.selectAll("rect")
+      .attr("y", d => x(d[0]) - 120)
+      .attr("height", d => x(d[0]) - x(d[1]) + 10)
+      .attr("fill", d => color(d[0]));
+    legendGroups.selectAll("text")
+      .attr("y", d => (x(d[0]) - 105))
+      .text(d => format(d[1]));
     var enterGroups = legendGroups.enter()
       .append("g")
       .attr("class", "legendGroup");
-    legendGroups.selectAll("rect").remove();
-    legendGroups.selectAll("text").remove();
-    legendGroups.append("rect")
-      .attr("y", d => x(d[0]) - 100)
+    enterGroups.append("rect")
+      .attr("y", d => x(d[0]) - 120)
       .attr("height", d => x(d[0]) - x(d[1]) + 10)
       .attr("width", 20)
       .attr("fill", d => color(d[0]));
-    legendGroups.append("text")
+    enterGroups.append("text")
         .attr("x", 30)
-        .attr("y", d => (x(d[0]) - 100) + 15)
+        .attr("y", d => x(d[0]) - 105)
         .attr("fill", "white")
         .text(d => format(d[1]));
     legendGroups.exit().remove();
