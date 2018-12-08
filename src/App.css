@@ -1,32 +1,160 @@
+body {
+  overflow: hidden;
+}
+
 .App {
+  position: relative;
+  text-align: center;
+  background-color: #282c34;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.title {
+  position: absolute;
+  left: 2vw;
+  color: #ffffff;
+  font-size: 4vw;
+}
+
+.map-title {
+  position: absolute;
+  top: 20vh;
+  color: white;
+  font-size: 1.8vw;
+  width: 50vw;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.map-legend {
+  position: absolute;
+  top: 17.5vh;
+  left: 40vw;
 }
 
-.App-header {
-  background-color: #282c34;
+/* .map-div {
+  position: absolute;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 55vw;
+} */
+
+.map-svg {
+  position: absolute;
+  top: 30vh;
+  left: 1vw;
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 12px;
+  background: rgba(43,43,43, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.plot-title {
+  position: absolute;
+  top: 20vh;
+  right: 0vw;
   color: white;
+  font-size: 1.8vw;
+  text-align: center;
+  width: 50vw;
 }
 
-.App-link {
-  color: #61dafb;
+.plot-svg {
+  position: absolute;
+  top: 30vh;
+  right: 8vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.y.axis line {
+  stroke: white;
+}
+
+.y.axis path {
+  stroke: white;
+}
+
+.y.axis text {
+  fill: white;
+}
+
+.x.axis line {
+  stroke: white;
+}
+
+.x.axis path {
+  stroke: white;
+}
+
+.x.axis text {
+  fill: white;
+}
+
+.color-button {
+  position: absolute;
+  /* display: flex; */
+  top: 90vh;
+  width: 40vw;
+  margin: 0 30vw 0 30vw;
+  /* left: 7.5vw; */
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.analytics-div {
+  position: absolute;
+  right: 0;
+  min-height: 100vh;
+  min-width: 45vw;
+}
+
+.analytics-title {
+  position: absolute;
+  top: 3vh;
+  color: #ffffff;
+  font-size: 2vw;
+  text-align: left;
+}
+
+.analytics-info {
+  position: absolute;
+  top: 5vh;
+  margin: 0 0 0 5%;
+  color: #ffffff;
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+.analytics-info p {
+  margin: -3% 6% 0 5%;
+  font-size: 1.25vw;
+}
+
+.analytics-data {
+  position: absolute;
+  top: 12.5vh;
+  margin: 0% 0 0 5%;
+  color: #ffffff;
+  font-size: 1.7vw;
+  text-align: left;
+}
+
+.analytics-data h2 {
+  margin: 2% 0 0 0;
+}
+
+.analytics-data h3 {
+  margin: 5% 0 2% 0;
+  font-size: 1.5vw;
+}
+
+.analytics-data p {
+  margin: 0 -5% 0 5%;
+  font-size: 1.25vw;
 }

@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ColorMap from './Components/Map'
+import Analytics from './Components/Analytics'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      clickedTract : null,
+      tractIncome: null
+    };
+  }
+
+  lastTractCallback = (tract, income) => {
+    this.setState({clickedTract : tract, tractIncome: income});
+  }
+
   render() {
+    //put this after color map to include the analytics section
+    //<Analytics tract={this.state.clickedTract} income={this.state.tractIncome}/>
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1 className="title">Berkeley Income and Food Mapping</h1>
+        <ColorMap tractCallback={this.lastTractCallback} width={500} height={400} />
       </div>
     );
   }
