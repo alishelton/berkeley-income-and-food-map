@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/berkely-income-and-food-map/precache-manifest.7c52f9b60c09384ef18493db2a125b5a.js"
+  "/berkeley-income-and-food-map/precache-manifest.7ac8c92cd276597d6e894fd1fb755838.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/berkely-income-and-food-map/index.html", {
+workbox.routing.registerNavigationRoute("/berkeley-income-and-food-map/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
