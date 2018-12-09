@@ -20,7 +20,7 @@ body {
 
 .map-title {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   color: white;
   font-size: 1.8vw;
   width: 50vw;
@@ -33,15 +33,9 @@ body {
   left: 40vw;
 }
 
-/* .map-div {
-  position: absolute;
-  min-height: 100vh;
-  width: 55vw;
-} */
-
 .map-svg {
   position: absolute;
-  top: 30vh;
+  bottom: 15vh;
   left: 1vw;
 }
 
@@ -55,7 +49,7 @@ body {
 
 .plot-title {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   right: 0vw;
   color: white;
   font-size: 1.8vw;
@@ -65,7 +59,7 @@ body {
 
 .plot-svg {
   position: absolute;
-  top: 30vh;
+  bottom: 20vh;
   right: 8vw;
 }
 
@@ -95,11 +89,9 @@ body {
 
 .color-button {
   position: absolute;
-  /* display: flex; */
   top: 90vh;
   width: 40vw;
   margin: 0 30vw 0 30vw;
-  /* left: 7.5vw; */
 }
 
 .background {

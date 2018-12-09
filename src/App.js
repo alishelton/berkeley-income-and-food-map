@@ -13,12 +13,13 @@ class App extends Component {
   }
 
   lastTractCallback = (tract, income) => {
-    this.setState({clickedTract : tract, tractIncome: income});
+    this.setState({
+      clickedTract : tract,
+      tractIncome: income
+    });
   }
 
   render() {
-    //put this after color map to include the analytics section
-    //<Analytics tract={this.state.clickedTract} income={this.state.tractIncome}/>
     return (
       <div className="App">
         <h1 className="title">Berkeley Income and Food Mapping</h1>
