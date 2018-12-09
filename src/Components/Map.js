@@ -39,7 +39,7 @@ class ColorMap extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    return (this.state.activeColorScheme !== nextState.activeColorScheme)
+    return (this.state.activeColorScheme !== nextState.activeColorScheme);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -198,6 +198,7 @@ class ColorMap extends Component {
       .domain(colorScheme[0])
       .range(colorScheme[1]);
 
+    //maybe use height and width?
     let x = d3.scaleLinear()
           .domain(d3.extent(color.domain()))
           .rangeRound([500, 200]);
@@ -257,6 +258,7 @@ class ColorMap extends Component {
       .attr("fill", "white")
       .attr("stroke", "white")
       .attr("transform", "translate(20, 370)");
+    //translate with height and width
     xAxisG.append("text")
       .attr("class", "x label")
       .attr("text-anchor", "end")
@@ -269,6 +271,7 @@ class ColorMap extends Component {
       .attr("class", "y axis")
       .attr("stroke", "white")
       .attr("transform", "translate(40, 10)");
+    //translate with height and width
     yAxisG.append("text")
       .attr("class", "y label")
       .attr("text-anchor", "end")
@@ -283,6 +286,7 @@ class ColorMap extends Component {
     var plotScale = (this.colorMap[this.state.activePlotScheme][0]).slice();
     plotScale[1]++;
 
+    //use height and width
     let xScale = d3.scaleLinear()
       .domain(incomeScale)
       .range([20, 500]);
@@ -316,6 +320,8 @@ class ColorMap extends Component {
 
     var plotScale = (this.colorMap[this.state.activePlotScheme][0]).slice();
     plotScale[1]++;
+
+    //use height and width
     let yScale = d3.scaleLinear()
       .domain(plotScale)
       .range([360, 0]);
@@ -366,13 +372,13 @@ class ColorMap extends Component {
 
   render() {
     var plotDesc = "Fast Food Restaurant";
-    if (this.state.activeColorScheme === "convenience") {
-      plotDesc = "Convenience Store"
+    if (this.state.activePlotScheme === "convenience") {
+      plotDesc = "Convenience Store";
     }
     return (
       <div className="map-div">
         <h3 className="map-title">{this.titles[this.state.activeColorScheme]}</h3>
-        <svg ref={node => this.lNode = node} width={100} height={600} className="map-legend"></svg>
+        <svg ref={node => this.lNode = node} width={100} height={this.props.height} className="map-legend"></svg>
         <svg ref={node => this.node = node} width={this.props.width} height={this.props.height} className="map-svg"></svg>
         <h3 className="plot-title">Median Income vs. {plotDesc} Count</h3>
         <svg ref={node => this.sNode = node} width={this.props.width} height={this.props.height} className="plot-svg"></svg>
@@ -385,7 +391,7 @@ class ColorMap extends Component {
               <Button bsStyle="primary" bsSize="large" onClick={this.fastFoodPressed}>Fast Food</Button>
             </ButtonGroup>
             <ButtonGroup>
-              <Button bsStyle="primary" bsSize="large" onClick={this.conveniencePressed}>Convenience Stores</Button>
+              <Button bsStyle="primary" bsSize="large" onClick={this.conveniencePressed}>Convenience</Button>
             </ButtonGroup>
           </ButtonGroup>
         </div>
