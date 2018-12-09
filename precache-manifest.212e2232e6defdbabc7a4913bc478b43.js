@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/berkeley-income-and-food-map/static/media/glyphicons-halflings-regular.f4769f9b.eot"
   },
   {
-    "revision": "162acbb9b0af29dc8fcd",
-    "url": "/berkeley-income-and-food-map/static/css/main.c82daa51.chunk.css"
+    "revision": "38ca79c97579d32a88b0",
+    "url": "/berkeley-income-and-food-map/static/css/main.1a86cdb2.chunk.css"
   },
   {
     "revision": "89889688147bd7575d6327160d64e760",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/berkeley-income-and-food-map/static/js/runtime~main.6d2ba383.js"
   },
   {
-    "revision": "162acbb9b0af29dc8fcd",
-    "url": "/berkeley-income-and-food-map/static/js/main.162acbb9.chunk.js"
+    "revision": "38ca79c97579d32a88b0",
+    "url": "/berkeley-income-and-food-map/static/js/main.38ca79c9.chunk.js"
   },
   {
     "revision": "448c34a56d699c29117adc64c43affeb",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/berkeley-income-and-food-map/static/css/1.d35d10fc.chunk.css"
   },
   {
-    "revision": "5a7387daab15df2755b30a85390015df",
+    "revision": "5a19dab015b5936af14d95a7f09da287",
     "url": "/berkeley-income-and-food-map/index.html"
   }
 ];

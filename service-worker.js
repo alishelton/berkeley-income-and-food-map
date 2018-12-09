@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/berkeley-income-and-food-map/precache-manifest.1a8fb0d1d61bf4b53607c1acd7d2747b.js"
+  "/berkeley-income-and-food-map/precache-manifest.212e2232e6defdbabc7a4913bc478b43.js"
 );
 
 workbox.clientsClaim();
